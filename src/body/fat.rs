@@ -56,10 +56,10 @@ mod tests {
             weight_log: FatLog {
                 bmi: 23.57,
                 entry: Entry {
-                    date: NaiveDate::from_ymd(2012, 3, 5),
+                    date: NaiveDate::from_ymd_opt(2012, 3, 5).unwrap(),
                     fat: 14.5,
                     log_id: 1330991999000,
-                    time: NaiveTime::from_hms(23, 59, 59),
+                    time: NaiveTime::from_hms_opt(23, 59, 59).unwrap(),
                     source: "API".to_string(),
                 },
             },
